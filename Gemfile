@@ -44,3 +44,11 @@ group :development, :test do
   gem 'spring', '1.1.3'
 end
 
+group :production do
+	# Use PostgreSQL db for Heroku 
+	gem 'pg', '0.17.1'
+
+	# Use rails_12factor for Heroku to serve static assets such as images and stylesheets.
+	gem 'rails_12factor', '0.0.2'
+end
+
